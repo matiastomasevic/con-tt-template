@@ -33,7 +33,7 @@ module lfsr(
     // sequential logic modeling a d-flip-flop with asynchronous reset
     always @(posedge clk_i or posedge reset_i) begin
         if (reset_i) begin
-            lfsr_p <= 32'd 12403709; // <--- Replace this with your matr.#
+            lfsr_p <= 32'd 12403710; // <--- Replace this with your matr.#
         end else begin
             lfsr_p <= lfsr_n;
         end
